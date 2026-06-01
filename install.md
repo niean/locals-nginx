@@ -32,6 +32,27 @@ sudo chown root:wheel /Library/LaunchDaemons/com.niean.nginx-gateway.plist
 sudo launchctl bootstrap system /Library/LaunchDaemons/com.niean.nginx-gateway.plist
 ```
 
+## Open WebUI (Hermes Chat)
+
+```bash
+# 首次启动（拉取镜像 + 启动容器）
+cd /Users/niean/install/open-webui
+# 编辑 .env 填入 Hermes API Key
+docker compose up -d
+
+# 停止
+docker compose down
+
+# 查看日志
+docker compose logs -f
+```
+
+配置目录: `/Users/niean/install/open-webui/`
+数据持久化: `/Users/niean/install/open-webui/data/`
+访问地址: `http://localhost/chat/` (通过 nginx) 或 `http://localhost:3000` (直连)
+
+首次访问需要创建管理员账号。在 Admin Settings > Connections 中确认 OpenAI API 连接指向 `http://host.docker.internal:8642/v1`。
+
 ## 卸载
 
 ```bash
