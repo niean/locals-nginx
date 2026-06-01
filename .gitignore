@@ -1,2 +1,6 @@
+# 通用
+.DS_Store
+
+# 项目
 logs/*
 !logs/.gitkeep
