@@ -20,11 +20,11 @@
     {
       icon: '<svg viewBox="14 18 36 32" fill="none"><path d="M22 24h20a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V28a4 4 0 0 1 4-4Z" fill="currentColor" opacity="0.15"/><path d="M22 24h20a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V28a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M26 21h12a3 3 0 0 1 3 3v2H23v-2a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="2" fill="none"/></svg>',
       title: '工具',
-      path: '/locals/',
+      path: '/tools/',
       children: [
-        { title: 'Photo Editor', href: '/locals/photo-editor/' },
-        { title: 'MDer', href: '/locals/mder/' },
-        { title: 'Iframer', href: '/locals/iframer/' }
+        { title: 'Photo Editor', href: '/tools/photo-editor/' },
+        { title: 'MDer', href: '/tools/mder/' },
+        { title: 'Iframer', href: '/tools/iframer/' }
       ]
     }
   ];
